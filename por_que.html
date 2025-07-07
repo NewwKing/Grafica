@@ -1,195 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
 
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,400;0,600;0,700;1,200;1,700&display=swap" rel="stylesheet">
-            
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/bootstrap-icons.css" rel="stylesheet" />
+  <link href="css/vegas.min.css" rel="stylesheet" />
+  <link href="css/tooplate-barista.css" rel="stylesheet" />
 
-        <link href="css/bootstrap-icons.css" rel="stylesheet">
-
-        <link href="css/vegas.min.css" rel="stylesheet">
-
-        <link href="css/tooplate-barista.css" rel="stylesheet">
+  <style>
+    #glb-model {
+      width: 100%;
+      height: 500px;
+      background: transparent;
+      position: relative;
+      overflow: hidden;
+    }
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">                
-                    <div class="container">
-                        <a class="navbar-brand d-flex align-items-center" href="index.html">
-                            <img src="images/infor.png" class="navbar-brand-image img-fluid" alt="Informatica" style="width: 100px; height: auto;">
-                            InfU
-                        </a>
-        
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-        
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav ms-lg-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link click-scroll" href="#section_1">INICIO</a>
-                                </li>
-        
-                                <li class="nav-item">
-                                    <a class="nav-link click-scroll" href="Informacion.html">INFORMACION</a>
-                                </li>
 
-                                <li class="nav-item">
-                                    <a class="nav-link click-scroll" href="#section_3">PROYECTOS</a>
-                                </li>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/team/Logonn.png" class="navbar-brand-image img-fluid" alt="Informatica" style="width: 110px; height: auto;" />
+        L3D
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-                                <li class="nav-item">
-                                    <a class="nav-link click-scroll" href="#section_4">AMBIENTES</a>
-                                </li>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-lg-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">INICIO</a></li>
+          <li class="nav-item"><a class="nav-link" href="Informacion.html">INFORMACION</a></li>
+          <li class="nav-item"><a class="nav-link" href="proyectos.html">PROYECTOS</a></li>
+          <li class="nav-item"><a class="nav-link" href="plantel.html">AMBIENTES</a></li>
+          <li class="nav-item"><a class="nav-link" href="por_que.html">CONTACTANOS</a></li>
+        </ul>
+        <div class="ms-lg-3">
+          <a class="btn custom-btn custom-border-btn" href="por__hacer.html">
+            falta
+            <i class="bi-arrow-up-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-                                <li class="nav-item">
-                                    <a class="nav-link click-scroll" href="#section_5">CONTACTANOS</a>
-                                </li>
-                            </ul>
+  <section class="contact-section section-padding" id="section_5">
+    <div class="container">
+      <div class="row">
 
-                            <div class="ms-lg-3">
-                                <a class="btn custom-btn custom-border-btn" href="por__hacer.html">
-                                    falta
-                                    <i class="bi-arrow-up-right ms-2"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-    <section class="contact-section section-padding" id="section_5">
-                    <div class="container">
-                        <div class="row">
+        <h1>ㅤ</h1>
+        <h2 class="text-white mb-4 pb-lg-2 ">ㅤㅤㅤㅤ  Ubicanos</h2>
 
-                            <div class="col-lg-12 col-12">
-                                <em class="text-white">Conoce más</em>
-                                <h2 class="text-white mb-4 pb-lg-2">¿Por qué elegir Ingeniería Informática?</h2>
-                            </div>
+        <div class="col-lg-6 col-12 mb-4">
+          <div id="glb-model"></div> 
+        </div>
 
-                            <div class="col-lg-6 col-12">
-                                <p class="text-white">
-                                    Elegir Ingeniería Informática es apostar por un futuro lleno de oportunidades. Esta carrera tiene una alta demanda laboral, tanto en Bolivia como en el extranjero.
-                                    Los profesionales de esta área son esenciales en el desarrollo de soluciones tecnológicas, inteligencia artificial, desarrollo de software, redes y ciberseguridad.
-                                </p>
-                                <p class="text-white">
-                                    Estudiar esta carrera te permite ser parte del cambio, impulsar la transformación digital y diseñar el mundo inteligente del mañana. 
-                                    Además, la formación práctica y el acceso a laboratorios tecnológicos te preparan para enfrentar los retos de un mundo cada vez más conectado.
-                                </p>
-                            </div>
+        <div class="col-lg-6 col-12 mb-4">
+          <iframe class="google-map"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d457.1472698238565!2d-66.58655481871202!3d-18.423444538695996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2sbo!4v1751857792362!5m2!1ses!2sbo"
+            width="100%" height="100%" style="min-height: 500px; border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
 
-                            <div class="col-lg-6 col-12 mt-4 mt-lg-0">
-                                <iframe class="google-map" 
-                                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3723.3603772193865!2d-66.57172800050571!3d-18.421290844224107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sbo!4v1716224823948!5m2!1ses-419!2sbo" 
-                                    width="100%" 
-                                    height="300" 
-                                    style="border:0; filter: none;" 
-                                    allowfullscreen="" 
-                                    loading="lazy" 
-                                    referrerpolicy="no-referrer-when-downgrade">
-                                </iframe>
-                            </div>
+      </div>
+    </div>
+  </section>
 
-                        </div>
-                    </div>
-                </section>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <!-- Contacto -->
+        <div class="col-lg-4 col-12 me-auto">
+          <em class="text-white d-block mb-4">¿Dónde encontrarnos?</em>
+          <strong class="text-white">
+            <i class="bi-geo-alt me-2"></i>
+            Avenida 10 de Noviembre, Llallagua, Potosí, Bolivia
+          </strong>
+          <ul class="social-icon mt-4">
+            <li class="social-icon-item"><a href="#" class="social-icon-link bi-facebook"></a></li>
+            <li class="social-icon-item"><a href="#" class="social-icon-link bi-twitter"></a></li>
+            <li class="social-icon-item"><a href="#" class="social-icon-link bi-whatsapp"></a></li>
+          </ul>
+        </div>
 
+        <div class="col-lg-3 col-12 mt-4 mb-3 mt-lg-0 mb-lg-0">
+          <em class="text-white d-block mb-4">Contacto</em>
+          <p class="d-flex mb-1">
+            <strong class="me-2">Celular:</strong>
+            <a href="tel:+59175712035" class="site-footer-link">(+591) 75712035</a>
+          </p>
+          <p class="d-flex">
+            <strong class="me-2">Correo:</strong>
+            <a href="mailto:King666@gmail.com" class="site-footer-link">King666@gmail.com</a>
+          </p>
+        </div>
 
+        <div class="col-lg-5 col-12">
+          <em class="text-white d-block mb-4">Horario de apertura.</em>
+          <ul class="opening-hours-list">
+            <li class="d-flex">Lunes - Viernes <span class="underline"></span> <strong>07:30 - 18:30</strong></li>
+            <li class="d-flex">Sábado <span class="underline"></span> <strong>Cerrado</strong></li>
+            <li class="d-flex">Domingo <span class="underline"></span> <strong>Cerrado</strong></li>
+          </ul>
+        </div>
 
-                <footer class="site-footer">
-                    <div class="container">
-                        <div class="row">
+        <div class="col-lg-8 col-12 mt-4">
+          <p class="copyright-text mb-0">
+            Derechos de autor © king666 Infor 2025 - Designado: <a href="https://glitch.com/edit/#!/grafica24" target="_blank">king</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-                            <div class="col-lg-4 col-12 me-auto">
-                                <em class="text-white d-block mb-4">¿Donde encontrarnos?</em>
+  <!-- Scripts -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/click-scroll.js"></script>
+  <script src="js/vegas.min.js"></script>
+  <script src="js/custom.js"></script>
 
-                                <strong class="text-white">
-                                    <i class="bi-geo-alt me-2"></i>
-                                    Campus Universitario María Barzola, Llallagua, Potosi, Bolivia
-                                </strong>
-
-                                <ul class="social-icon mt-4">
-                                    <li class="social-icon-item">
-                                        <a href="#" class="social-icon-link bi-facebook">
-                                        </a>
-                                    </li>
-        
-                                    <li class="social-icon-item">
-                                        <a href="https://x.com/minthu" target="_new" class="social-icon-link bi-twitter">
-                                        </a>
-                                    </li>
-
-                                    <li class="social-icon-item">
-                                        <a href="#" class="social-icon-link bi-whatsapp">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="col-lg-3 col-12 mt-4 mb-3 mt-lg-0 mb-lg-0">
-                                <em class="text-white d-block mb-4">Contacto</em>
-
-                                <p class="d-flex mb-1">
-                                    <strong class="me-2">Celular:</strong>
-                                    <a href="tel: 305-240-9671" class="site-footer-link">
-                                        (+591) 
-                                        75712035
-                                    </a>
-                                </p>
-
-                                <p class="d-flex">
-                                    <strong class="me-2">Correo:</strong>
-
-                                    <a href="mailto:info@yourgmail.com" class="site-footer-link">
-                                        King666@gmail.com
-                                    </a>
-                                </p>
-                            </div>
-
-
-                            <div class="col-lg-5 col-12">
-                                <em class="text-white d-block mb-4">Horario de apertura.</em>
-
-                                <ul class="opening-hours-list">
-                                    <li class="d-flex">
-                                        Lunes - Viernes
-                                        <span class="underline"></span>
-
-                                        <strong>07:30 - 18:30</strong>
-                                    </li>
-
-                                    <li class="d-flex">
-                                        Sábado
-                                        <span class="underline"></span>
-
-                                        <strong>Cerrado</strong>
-                                    </li>
-
-                                    <li class="d-flex">
-                                        Domingo
-                                        <span class="underline"></span>
-
-                                        <strong>Cerrado</strong>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="col-lg-8 col-12 mt-4">
-                                <p class="copyright-text mb-0">Derechos de autor © king666 Infor 2025
-                                    - Designado: <a rel="sponsored" href="https://www.tooplate.com" target="_blank">king</a></p>
-                            </div>
-                    </div>
-                </footer>
-                <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.sticky.js"></script>
-        <script src="js/click-scroll.js"></script>
-        <script src="js/vegas.min.js"></script>
-        <script src="js/custom.js"></script>
-
+  <!-- Carga del modelo -->
+  <script type="module" src="js/personaje.js"></script>
 </body>
 </html>

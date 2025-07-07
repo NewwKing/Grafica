@@ -669,13 +669,20 @@ strong {
   top: 2px;
   bottom: 0;
 }
-
+#glb-model canvas {
+  position: absolute;
+  top:0;
+  right: 0;
+  width: 500px;
+  height: 500px;
+  pointer-events: none; /* para que no bloquee clics */
+}
 
 /*---------------------------------------
   OUR MENU              
 -----------------------------------------*/
 .menu-section {
-  background-image: url('../images/proyec.png');
+  background-image: url('../images/team/hospital.png');
   background-repeat: no-repeat;
   background-size: cover;
 }

@@ -168,8 +168,6 @@
         });
       }
     };
-
-  
   if (window.addEventListener) {
     window.addEventListener('scroll', scroller, false);
     window.addEventListener('resize', resizer, false);

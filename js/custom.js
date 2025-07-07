@@ -10,9 +10,10 @@
     $(function() {
       $('.hero-slides').vegas({
           slides: [
-              { src: 'images/proyec.png' },
-              { src: 'images/bloA.jpg' },
-              { src: 'images/bloB.jpg' }
+              { src: 'images/team/ladoNN.png' },
+              { src: 'images/team/centro.png' },
+              { src: 'images/team/siglo.jpg' },
+              { src: 'images/team/frente.jpg' }
           ],
           timer: false,
           animation: 'kenburns',
